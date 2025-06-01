@@ -1,0 +1,148 @@
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   Root & Base Theme
+   ========================= */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: #134e21; /* Deep green for text */
+  background-color: #f0fdf4; /* Light green background */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f0fdf4; /* Light green background */
+}
+
+/* =========================
+   Typography
+   ========================= */
+h1, h2, h3, h4, h5, h6 {
+  color: #15803d; /* Navbar green for headings */
+  font-family: inherit;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Links
+   ========================= */
+a {
+  color: #15803d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+a:hover {
+  color: #16a34a;
+  text-decoration: underline;
+}
+
+/* =========================
+   Card & Section Containers
+   ========================= */
+.card, .main-section {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #15803d;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(21,128,61,0.08);
+}
+button:hover {
+  background-color: #16a34a;
+}
+button:disabled {
+  background-color: #a7f3d0;
+  color: #134e21;
+  cursor: not-allowed;
+}
+
+/* =========================
+   Forms & Inputs
+   ========================= */
+input, select, textarea {
+  border: 1px solid #a7f3d0;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  background: #f0fdf4;
+  color: #134e21;
+  transition: border 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #16a34a;
+  outline: none;
+}
+
+/* =========================
+   Utility Classes
+   ========================= */
+.text-green {
+  color: #15803d;
+}
+.bg-green-light {
+  background: #f0fdf4;
+}
+
+/* =========================
+   Responsive Adjustments
+   ========================= */
+@media (max-width: 600px) {
+  .card, .main-section {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}

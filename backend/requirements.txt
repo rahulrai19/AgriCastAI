@@ -1,0 +1,8 @@
+langchain
+openai
+scikit-learn
+tensorflow
+numpy
+joblib
+fastapi  
+uvicorn         
